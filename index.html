@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/glide.core.min.css">
+    <link rel="stylesheet" href="./css/glide.theme.min.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Simply Chocolate</title>
@@ -321,55 +323,58 @@
 
 
     <!-- === section chocolate is loved === -->
+    
 
 
     <section class="section__loved">
-        <div class="container">
+        <div class="container relative">
             <h3 class="loved-title">
                 chocolate <span class="loved__title-span">is loved</span>
             </h3>
-            <ul class="loved__list">
-                <li class="loved__list-item active">
-                    <img src="./images/victoria-min.png" alt="Victoria" class="portfolio-img" width="80" height="80">
-                    <h3 class="name-title">
-                        Victoria Dobrzhanska
-                    </h3>
-                    <p class="text-deskr">
-                        I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.
-                    </p>
-                </li>
-                <li class="loved__list-item">
-                    <img src="./images/nazar-min.png" alt="Nazar" class="portfolio-img"iwidth="80" height="80">
-                    <h3 class="name-title">
-                        Nazar Babenko
-                    </h3>
-                    <p class="text-deskr">
-                        This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the
-                        chocolate is good.
-                    </p>
-                </li>
-                <li class="loved__list-item">
-                    <img src="./images/Olena-min.png" alt="Olena" class="portfolio-img"iwidth="80" height="80">
-                    <h3 class="name-title">
-                        Olena Kampusch
-                    </h3>
-                    <p class="text-deskr">
-                        Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft
-                        but crunchy.
-                    </p>
-                </li>
-            </ul>
-            <div class="slider-controls">
-                <svg width="28" height="13">
-                    <use href="./images/icons.svg#icon-rectangle"></use>
-                </svg>
-                <svg class="scroller" width="13" height="13">
-                <use href="./images/icons.svg#icon-ellipse"></use>
-                </svg>
-                <svg class="scroller" width="13" height="13">
-                <use href="./images/icons.svg#icon-ellipse"></use>
-                </svg>
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="loved__list glide__slides">
+                        <li class="loved__list-item glide__slide">
+                            <img src="./images/victoria-min.png" alt="Victoria" class="portfolio-img" width="80" height="80">
+                            <h3 class="name-title">
+                                Victoria Dobrzhanska
+                            </h3>
+                            <p class="text-deskr">
+                                I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.
+                            </p>
+                        </li>
+                        <li class="loved__list-item glide__slide">
+                            <img src="./images/nazar-min.png" alt="Nazar" class="portfolio-img" width="80" height="80">
+                            <h3 class="name-title">
+                                Nazar Babenko
+                            </h3>
+                            <p class="text-deskr">
+                                This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the
+                                chocolate is good.
+                            </p>
+                        </li>
+                        <li class="loved__list-item glide__slide">
+                            <img src="./images/Olena-min.png" alt="Olena" class="portfolio-img" width="80" height="80">
+                            <h3 class="name-title">
+                                Olena Kampusch
+                            </h3>
+                            <p class="text-deskr">
+                                Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft
+                                but crunchy.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0">
+                        
+                    </button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                </div>
             </div>
+            
+            
         </div>
     </section>
 </main>
@@ -441,6 +446,12 @@
 </div>
     <!-- == add JS scripting for functions -->
 
-    <script src="./script.js"></script>
+
+<script src="./script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script>
+    new Glide('.glide').mount()
+    
+</script>
 </body>
 </html>

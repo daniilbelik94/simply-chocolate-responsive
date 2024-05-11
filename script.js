@@ -53,58 +53,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-document.addEventListener('DOMContentLoaded', function () {
-            const slides = document.querySelectorAll('.loved__list-item');
-            const controls = document.querySelector('.slider-controls');
-            let currentIndex = 0;
-            let xDown = null;
-
-            function showSlide(index) {
-                slides.forEach((slide, i) => {
-                    if (i === index) {
-                        slide.classList.add('active');
-                    } else {
-                        slide.classList.remove('active');
-                    }
-                });
-            }
-
-            function showNextSlide() {
-                currentIndex = (currentIndex + 1) % slides.length;
-                showSlide(currentIndex);
-            }
-
-            function showPrevSlide() {
-                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-                showSlide(currentIndex);
-            }
-
-            controls.addEventListener('touchstart', function(evt) {
-                const firstTouch = evt.touches[0];
-                xDown = firstTouch.clientX;
-            }, false);
-
-            controls.addEventListener('touchmove', function(evt) {
-                if (!xDown) {
-                    return;
-                }
-
-                let xUp = evt.touches[0].clientX;
-                let xDiff = xDown - xUp;
-
-                if (xDiff > 0) {
-                    showNextSlide();
-                } else {
-                    showPrevSlide();
-                }
-
-                // Сбрасываем координаты по горизонтали
-                xDown = null;
-            }, false);
-
-            // Показываем первый слайд
-            showSlide(currentIndex);
-        });
-
 
 
