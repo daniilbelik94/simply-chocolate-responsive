@@ -516,7 +516,7 @@ img {
 /* === section chocolate is loved === */
 
 .section__loved {
-    margin-bottom: 72px;
+    margin-bottom: 60px;
 }
 .loved-title {
     color: #FD9222;
@@ -526,14 +526,21 @@ img {
     font-weight: 600;
     line-height: 24px; /* 133.333% */
     text-transform: uppercase;
-    margin-bottom: 74px;
+    margin-bottom: 34px;
 }
 
 
 .loved__title-span {
     color: #111;
 }
+.glide__track {
 
+}
+
+.glide__slides {
+  padding-top: 40px;
+    
+}
 .glide__slide {
 
     height: 200px;
@@ -547,8 +554,6 @@ img {
 
 .portfolio-img {
     position: absolute;
-    z-index: 99999;
-    content: '';
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -570,14 +575,13 @@ img {
     letter-spacing: -0.28px; 
 }
 
+
 .glide__bullets {
   position: relative;
-  top: 10px;
+  top: 20px;
+  margin-bottom: 24px;
 }
-.glide-visible {
-  overflow: visible;
-  position: relative;
-}
+
 .glide__bullet {
   width: 13px;
   height: 13px;
@@ -591,6 +595,20 @@ img {
   border-radius: 7px;
   flex-shrink: 0;
   background-color: #FD9222;
+}
+
+.button__pre-footer {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 24px;
+  padding: 12px 28px;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 100px;
+  border: 1px solid #FD9222;
 }
 /* modal overlay */
 .modal {
