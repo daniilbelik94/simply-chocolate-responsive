@@ -50,7 +50,7 @@
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M16 14.667c2.945 0 5.333-2.388 5.333-5.333s-2.388-5.333-5.333-5.333c-2.946 0-5.333 2.388-5.333 5.333s2.388 5.333 5.333 5.333z"></path>
 </symbol>
 <symbol id="icon-x" viewBox="0 0 32 32">
-<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M22.666 9.333l-13.333 13.333M9.333 9.333l13.333 13.333"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color2, #111)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M22.666 9.333l-13.333 13.333M9.333 9.333l13.333 13.333"></path>
 </symbol>
 </defs>
 </svg>

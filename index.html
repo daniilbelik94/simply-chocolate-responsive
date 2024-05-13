@@ -377,7 +377,66 @@
             </button>
         </div>
     </section>
-
+    <footer class="footer__section">
+        <div class="container">
+            <h2 class="footer__title">
+                <span class="footer__tittle-span">Chocolate</span> a delicious cure for a bad day
+            </h2>
+            <address class="footer__address">
+                <p class="footer__address-tittle">
+                    Contact us
+                </p >
+                <ul class="footer__address-list">
+                    <li class="address__list-item">
+                        <a href="tel:+380684439426" class="address-item-link">
+                            +380 (68) 443-94-26
+                        </a>
+                        </li>
+                    <li class="address__list-item decoration">
+                        <a href="mailto:simplychoc@gmail.com" class="address-item-link">
+                            simplychoc@gmail.com
+                        </a>
+                        </li>
+                </ul>
+            </address>
+            <nav class="footer-nav">
+                <ul class="nav-list">
+                    <li class="nav__list-item">
+                        <a href="" class="nav__list-item-link">
+                            Home</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="" class="nav__list-item-link">
+                            How it’s made?</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="" class="nav__list-item-link">
+                            Our products</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="" class="nav__list-item-link">
+                            Top sellers</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="" class="nav__list-item-link">
+                            Chocolate is loved</a>
+                    </li>
+                </ul>
+            </nav>
+            <form class="footer-form">
+                <label class="footer-label">
+                    <input class="footer-input_email" type="email" name="email" placeholder="Enter your email" required>
+                </label>
+                <button type="submit" class="button-input-submit">Subscribe
+                    <svg class="icon footer-icon" width="24" height="24">
+                        <use href="./images/icons.svg#iconicon-send">
+                        </use>
+                    </svg>
+                </button>
+            
+            </form>
+        </div>
+    </footer>
 </main>
 <footer>
 
@@ -390,11 +449,12 @@
 <div class="modal" id="orderButton">
     <div class="callback__modal-overlay">
         <button type="button" class="callback__close-button">
-            <svg width="8" height="8" class="callback__close-icon">
-                <use href="./images/icons.svg#iconVector"></use>
+            <svg width="24" height="24" class="callback__close-icon">
+                <use href="./images/icons.svg#icon-x"></use>
             </svg>
         </button>
-        <p class="callback__title">Leave your contacts and we will call you back</p>
+        <p class="callback__title">leave a review
+        about <span class="modal__title-span">our chocolate</span></p>
         <form name="call-back-form" autocomplete="off" class="callback__form">
             <div class="callback__form-field">
                 <label for="user-name" class="callback__form-label">Name</label>
