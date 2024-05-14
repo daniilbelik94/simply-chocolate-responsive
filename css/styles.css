@@ -699,8 +699,7 @@ img {
   align-items: center;
   justify-content: start;
 }
-.footer-label {
-}
+
 .footer-input_email {
   display: flex;
   width: 207px;
@@ -730,10 +729,7 @@ img {
   font-weight: 600;
   line-height: normal;
 }
-.icon {
-}
-.footer-icon {
-}
+
 
 
 /* modal overlay */

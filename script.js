@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const callbackCloseButton = document.querySelector('.callback__close-button');
   const sendButton = document.querySelector('.callback__form-submit-button');
   const form = document.querySelector('.callback__form'); // Убедитесь, что форма имеет этот класс или используйте правильный селектор
+  const navLinks = document.querySelectorAll('nav a');
+  const scrollDownLink = document.querySelector('.scroll-down');
+  const svgNearScrollDown = document.querySelector('.svg-near-scroll-down'); // Предположим, что есть такой элемент
 
   function toggleMenu() {
     if (mobMenu) {
@@ -40,6 +43,12 @@ document.addEventListener('DOMContentLoaded', function() {
       return form.checkValidity();
     }
     return false;
+  }
+
+  function smoothScroll(target) {
+    document.querySelector(target).scrollIntoView({
+      behavior: 'smooth'
+    });
   }
 
   if (headerBurger) {
@@ -92,11 +101,32 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+
+  // Плавная прокрутка при нажатии на ссылки в навигации
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = this.getAttribute('href');
+      if (mobMenu && mobMenu.classList.contains('is-open')) {
+        toggleMenu(); // Закрываем бургер-меню перед прокруткой
+      }
+      smoothScroll(target);
+    });
+  });
+
+  // Плавная прокрутка при нажатии на Scroll Down
+  if (scrollDownLink) {
+    scrollDownLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      smoothScroll('#footer');
+    });
+  }
+
+  // Плавная прокрутка при нажатии на SVG рядом с Scroll Down
+  if (svgNearScrollDown) {
+    svgNearScrollDown.addEventListener('click', function(e) {
+      e.preventDefault();
+      smoothScroll('#footer');
+    });
+  }
 });
-
-
-
-
-
-
-

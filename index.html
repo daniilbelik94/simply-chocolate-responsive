@@ -57,22 +57,22 @@
                         <li class="mob-menu__item">
                             <a class="mob-menu__link" href="./index.html">Home</a>
                         </li>
-                        <li class="mob-menu__item"><a class="mob-menu__link" href="">How it’s made?</a></li>
-                        <li class="mob-menu__item"><a class="mob-menu__link" href="">Chocolate is loved</a></li>
+                        <li class="mob-menu__item"><a class="mob-menu__link" href="#how-its-made">How it’s made?</a></li>
+                        <li class="mob-menu__item"><a class="mob-menu__link" href="#chocolate-is-loved">Chocolate is loved</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="mob-menu__social">
                     <ul class="mob-menu__social-list">
                         <li class="mob-menu__social-item">
-                            <a class="mob-menu__social-link" href="">
+                            <a class="mob-menu__social-link" href="https://www.instagram.com/">
                                 <svg class="mob-menu__social-icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="mob-menu__social-item">
-                            <a class="mob-menu__social-link" href="">
+                            <a class="mob-menu__social-link" href="https://twitter.com/?lang=ru">
                                 <svg class="mob-menu__social-icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-twitter"></use>
                                 </svg>
@@ -90,18 +90,20 @@
                 to our finest ingredients for a moment of pure delight!
             </h1>
             <div class="hero__button-container">
-                <button class="button__hero" id="orderButton">
+                <button class="button__hero">
                     Buy now
                 </button>
-                <button class="second-button__hero">
-                    How it’s made
-                </button>
+                <a href="#how-its-made">
+                    <button class="second-button__hero">
+                        How it’s made
+                    </button>
+                </a>
             </div>
-            <div class="scroll-down__container" id="footer">
-                <a href="#" class="scroll-down">
+            <div class="scroll-down__container">
+                <a href="#footer" class="scroll-down">
                     scroll down
                 </a>
-                <a class="icon-link">
+                <a class="icon-link" href="#footer">
                     <svg class="hero-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-arrow-down"></use>
                     </svg>
@@ -258,7 +260,7 @@
                 <li class="ingridients__list-item">
                     <img src="./images/coffe-mob-min.png" alt="Sweet Chocolate" class="ingridients__list-img" width="224" height="171">
                     <h3 class="ingridients__list-title">
-
+                        sEMI - SWEET CHOCOLATE
                     </h3>
                     <div class="hidden-container">
                         <h3 class="hidden-tittle">
@@ -287,37 +289,37 @@
     <!-- === section how its made === -->
 
 
-    <section class="section__how-made">
+    <section class="section__how-made" id="how-its-made">
         <div class="container">
             <h3 class="how-made__title">
                 HOW IT’S <span class="how-made-colorized">made?</span>
             </h3>
         
-        <img src="./images/secttion-video-min.png" alt="How its made" width="335" height="500" class="how-made__img">
+            <img src="./images/secttion-video-min.png" alt="How its made" width="335" height="500" class="how-made__img">
         
-        <div class="how-made__container">
-            <p class="how-made-deskr">
-                Try our chocolates today and discover the perfect balance of flavor
-            </p>
-            <ul class="how-made__list">
-                <li class="how-made__list-item">
-                    Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.
-                </li>
-                <li class="how-made__list-item">
-                    At the same time, prepare a water bath. Melt the butter on it.
-                </li>
-                <li class="how-made__list-item">
-                "Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes
-                uniform and silky.
-                </li>
-                <li class="how-made__list-item">
-                    Heat the mixture over low heat, letting it barely boil.
-                </li>
-                <li class="how-made__list-item">
-                    Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.
-                </li>
-            </ul>
-        </how-made__container>
+            <div class="how-made__container">
+                <p class="how-made-deskr">
+                    Try our chocolates today and discover the perfect balance of flavor
+                </p>
+                <ul class="how-made__list">
+                    <li class="how-made__list-item">
+                        Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.
+                    </li>
+                    <li class="how-made__list-item">
+                        At the same time, prepare a water bath. Melt the butter on it.
+                    </li>
+                    <li class="how-made__list-item">
+                        "Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes
+                        uniform and silky.
+                    </li>
+                    <li class="how-made__list-item">
+                        Heat the mixture over low heat, letting it barely boil.
+                    </li>
+                    <li class="how-made__list-item">
+                        Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -326,7 +328,7 @@
     
 
 
-    <section class="section__loved">
+    <section class="section__loved" id="chocolate-is-loved">
         <div class="container relative">
             <h3 class="loved-title">
                 chocolate <span class="loved__title-span">is loved</span>
@@ -372,12 +374,12 @@
                     <button class="glide__bullet" data-glide-dir="=2"></button>
                 </div>
             </div>
-            <button class="button__pre-footer" type="button" id="orderButton">
+            <button class="button__pre-footer" type="button">
                 Leave a review
             </button>
         </div>
     </section>
-    <footer class="footer__section">
+    <footer class="footer__section" id="footer">
         <div class="container">
             <h2 class="footer__title">
                 <span class="footer__tittle-span">Chocolate</span> a delicious cure for a bad day
@@ -402,11 +404,11 @@
             <nav class="footer-nav">
                 <ul class="nav-list">
                     <li class="nav__list-item">
-                        <a href="" class="nav__list-item-link">
+                        <a href="./index.html" class="nav__list-item-link">
                             Home</a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="" class="nav__list-item-link">
+                        <a href="#how-its-made" class="nav__list-item-link">
                             How it’s made?</a>
                     </li>
                     <li class="nav__list-item">
@@ -418,7 +420,7 @@
                             Top sellers</a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="" class="nav__list-item-link">
+                        <a href="#chocolate-is-loved" class="nav__list-item-link">
                             Chocolate is loved</a>
                     </li>
                 </ul>
@@ -477,7 +479,7 @@
             <div class="callback__form-field">
                 <label for="user-email" class="callback__form-label">Phone</label>
                 <div class="callback__form-input-wrapper">
-                    <input type="phone" name="user-phone" id="user-phone" class="callback__form-input" required>
+                    <input type="tel" name="user-phone" id="user-phone" class="callback__form-input" required>
                     <svg width="17" height="17" class="callback__form-input-icon">
                         <use href="./images/icons.svg#icon-phone"></use>
                     </svg>
