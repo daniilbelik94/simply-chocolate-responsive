@@ -90,7 +90,7 @@
                 to our finest ingredients for a moment of pure delight!
             </h1>
             <div class="hero__button-container">
-                <button class="button__hero">
+                <button class="button__hero" id="orderButton">
                     Buy now
                 </button>
                 <button class="second-button__hero">
@@ -453,48 +453,48 @@
                 <use href="./images/icons.svg#icon-x"></use>
             </svg>
         </button>
-        <p class="callback__title">leave a review
+        <p class="callback__title">leave a review <br>
         about <span class="modal__title-span">our chocolate</span></p>
         <form name="call-back-form" autocomplete="off" class="callback__form">
             <div class="callback__form-field">
                 <label for="user-name" class="callback__form-label">Name</label>
                 <div class="callback__form-input-wrapper">
-                    <input type="text" name="user-name" id="user-name" class="callback__form-input">
-                    <svg width="12" height="12" class="callback__form-input-icon">
-                        <use href="./images/icons.svg#iconname"></use>
-                    </svg>
-                </div>
-            </div>
-            <div class="callback__form-field">
-                <label for="user-phone" class="callback__form-label">Phone</label>
-                <div class="callback__form-input-wrapper">
-                    <input type="tel" name="user-phone" id="user-phone" class="callback__form-input">
-                    <svg width="12" height="12" class="callback__form-input-icon">
-                        <use href="./images/icons.svg#iconphone"></use>
+                    <input type="text" name="user-name" id="user-name" class="callback__form-input" required>
+                    <svg width="17" height="17" class="callback__form-input-icon">
+                        <use href="./images/icons.svg#icon-user"></use>
                     </svg>
                 </div>
             </div>
             <div class="callback__form-field">
                 <label for="user-email" class="callback__form-label">Email</label>
                 <div class="callback__form-input-wrapper">
-                    <input type="email" name="user-email" id="user-email" class="callback__form-input">
-                    <svg width="12" height="12" class="callback__form-input-icon">
-                        <use href="./images/icons.svg#iconmail"></use>
+                    <input type="email" name="user-email" id="user-email" class="callback__form-input" required>
+                    <svg width="17" height="17" class="callback__form-input-icon">
+                        <use href="./images/icons.svg#icon-mail"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="callback__form-field">
+                <label for="user-email" class="callback__form-label">Phone</label>
+                <div class="callback__form-input-wrapper">
+                    <input type="phone" name="user-phone" id="user-phone" class="callback__form-input" required>
+                    <svg width="17" height="17" class="callback__form-input-icon">
+                        <use href="./images/icons.svg#icon-phone"></use>
                     </svg>
                 </div>
             </div>
             <div class="callback__form-field comment">
                 <label for="user-comment" class="callback__form-label">Comment</label>
                 <textarea name="user-comment" id="user-comment" cols="30" rows="10" class="callback__form-textarea"
-                    placeholder="Text input"></textarea>
+                    placeholder="Enter text"></textarea>
             </div>
             <div class="callback__form-field checkbox__form-field">
                 <input type="checkbox" id="user-privacy" value="true" name="user-privacy"
                     class="callback__form-checkbox visually-hidden" required>
                 <label for="user-privacy" class="callback__form-checkbox-label">
-                    <span class="callback__form-checkbox-icon">
-                        <svg width="10" height="8" class="callback__form-checkbox-icon-svg">
-                            <use href="./images/icons.svg#iconclick"></use>
+                    <span class="callback__form-checkbox-icon ">
+                        <svg width="10" height="9" class="callback__form-checkbox-icon-svg">
+                            <use href="./images/icons.svg#icon-modal-check"></use>
                         </svg>
                     </span>
                     I accept the terms and conditions of the
