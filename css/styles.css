@@ -87,7 +87,7 @@ img {
   
 }
 
-.3 {
+.header__menu {
   display: none;
 }
 
@@ -1004,7 +1004,7 @@ margin-bottom: 32px;
     background-size: cover;
     border-radius: 30px 30px 30px 30px;
     margin-bottom: 60px;
-    margin: 0 auto;
+    margin: 0 auto 60px;
     }
   
 }
@@ -1058,7 +1058,10 @@ margin-bottom: 32px;
   .header__wrapper {
     display: block;
   }
-
+ .header__container-desk {
+  display: flex;
+  justify-content: flex-end
+ }
   .mob-menu__list {
     display: none;
   }
@@ -1081,6 +1084,9 @@ margin-bottom: 32px;
     justify-content: center;
     gap: 24px;
     font-size: 14px;
+  }
+  .header__menu-item:last-child {
+    margin-right: 48px;
   }
   .menu__social {
     display: block;
