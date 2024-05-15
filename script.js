@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const modalOverlay = document.querySelector('.callback__modal-overlay');
   const callbackCloseButton = document.querySelector('.callback__close-button');
   const sendButton = document.querySelector('.callback__form-submit-button');
-  const form = document.querySelector('.callback__form'); // Убедитесь, что форма имеет этот класс или используйте правильный селектор
+  const form = document.querySelector('call-back-form'); 
   const navLinks = document.querySelectorAll('nav a');
   const scrollDownLink = document.querySelector('.scroll-down');
-  const svgNearScrollDown = document.querySelector('.svg-near-scroll-down'); // Предположим, что есть такой элемент
+  const svgNearScrollDown = document.querySelector('hero-icon'); // Предположим, что есть такой элемент
 
   function toggleMenu() {
     if (mobMenu) {
