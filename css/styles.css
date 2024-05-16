@@ -105,6 +105,19 @@ img {
 
 /* === mobile burger menu === */
 
+.mob-menu {
+    display: none;
+    /* другие стили */
+}
+
+.mob-menu.is-open {
+    display: block;
+    /* другие стили */
+}
+
+.no-scroll {
+    overflow: hidden;
+}
 
 
 
@@ -155,8 +168,8 @@ img {
   align-items: center;
   position: absolute;
   cursor: pointer;
-  top: 20px;
-  right: 20px;
+  top: 24px;
+  right: 34px;
   width: 24px;
   height: 24px;
   padding: 0;
@@ -1133,7 +1146,7 @@ margin-bottom: 32px;
   .button__hero {
     padding: 14px 40px;
     width: 149px;
-    height: 45px;
+    height: 47px;
   }
   .second-button__hero {
     padding: 14px 40px;
@@ -1277,6 +1290,7 @@ margin-bottom: 32px;
   .button__pre-footer {
     margin-top: 0;
     padding: 14px 40px;
+    height: 47px;
   }
   .button__pre-footer:hover,
   .button__pre-footer:focus {
@@ -1352,6 +1366,7 @@ margin-bottom: 32px;
   }
   .button-input-submit {
     width: 128px;
+    height: 47px;
   }
   .button-input-submit:hover,
   .button-input-submit:focus {

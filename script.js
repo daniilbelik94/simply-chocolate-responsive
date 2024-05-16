@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
   const modalOverlay = document.querySelector('.callback__modal-overlay');
   const callbackCloseButton = document.querySelector('.callback__close-button');
   const sendButton = document.querySelector('.callback__form-submit-button');
-  const form = document.querySelector('call-back-form'); 
+  const form = document.querySelector('.call-back-form');
   const navLinks = document.querySelectorAll('nav a');
   const scrollDownLink = document.querySelector('.scroll-down');
-  const svgNearScrollDown = document.querySelector('hero-icon'); // Предположим, что есть такой элемент
-
+  const svgNearScrollDown = document.querySelector('.icon-link');
+  
   function toggleMenu() {
     if (mobMenu) {
       mobMenu.classList.toggle('is-open');
@@ -122,6 +122,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+ 
+  
   // Плавная прокрутка при нажатии на SVG рядом с Scroll Down
   if (svgNearScrollDown) {
     svgNearScrollDown.addEventListener('click', function(e) {
@@ -130,3 +132,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+
+

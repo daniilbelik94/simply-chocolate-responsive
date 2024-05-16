@@ -66,7 +66,7 @@
 
 
             
-        <div class="mob-menu is-open">
+        <div class="mob-menu">
             <div class="mob-menu__wrapper">
                 <button class="mob-menu__exit-btn" type="button">
                     <svg class="mob-menu__exit-icon" width="24" height="24">
@@ -548,8 +548,22 @@
 <script src="./script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 <script>
-    new Glide('.glide').mount()
-    
+    const config = {
+        type: "carousel",
+        perView: 3,
+        breakpoints: {        
+            1200: {
+                perView: 3
+            },
+            1199: {
+                perView: 2
+            },
+            767: {
+                perView: 1
+            }
+        }
+    };
+    new Glide(".glide", config).mount();        
 </script>
 </body>
 </html>
