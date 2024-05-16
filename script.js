@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const navLinks = document.querySelectorAll('nav a');
   const scrollDownLink = document.querySelector('.scroll-down');
   const svgNearScrollDown = document.querySelector('.icon-link');
-  
+  const scrollDownBtn = document.querySelector('.second-button__hero');
   function toggleMenu() {
     if (mobMenu) {
       mobMenu.classList.toggle('is-open');
@@ -122,6 +122,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  if (scrollDownBtn) {
+    scrollDownBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      smoothScroll('#how-its-made');
+    });
+  }
  
   
   // Плавная прокрутка при нажатии на SVG рядом с Scroll Down
