@@ -1,2 +1,1 @@
-# simply-chocolate-responsive
- first deploy without adaptive
+# simply-chocolate
